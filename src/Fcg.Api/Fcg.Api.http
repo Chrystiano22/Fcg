@@ -1,0 +1,128 @@
+@Fcg.Api_HostAddress = http://localhost:5020
+
+GET {{Fcg.Api_HostAddress}}/api/health
+Accept: application/json
+
+###
+
+POST {{Fcg.Api_HostAddress}}/usuarios
+Content-Type: application/json
+
+{
+  "nome": "Alice Johnson",
+  "email": "alice@example.com",
+  "senha": "Secure@123"
+}
+
+###
+
+POST {{Fcg.Api_HostAddress}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "alice@example.com",
+  "senha": "Secure@123"
+}
+
+###
+
+POST {{Fcg.Api_HostAddress}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@fcg.local",
+  "senha": "Admin@123"
+}
+
+###
+
+GET {{Fcg.Api_HostAddress}}/usuarios/me
+Authorization: Bearer {{token}}
+Accept: application/json
+
+###
+
+POST {{Fcg.Api_HostAddress}}/jogos
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "titulo": "Architecture Quest",
+  "descricao": "Jogo educativo sobre arquitetura de software.",
+  "preco": 79.90,
+  "categoria": "Educacao"
+}
+
+###
+
+GET {{Fcg.Api_HostAddress}}/jogos
+Authorization: Bearer {{token}}
+Accept: application/json
+
+###
+
+PUT {{Fcg.Api_HostAddress}}/jogos/{{gameId}}
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "titulo": "Architecture Quest Reloaded",
+  "descricao": "Versao atualizada do jogo educativo sobre arquitetura.",
+  "preco": 89.90,
+  "categoria": "Educacao"
+}
+
+###
+
+DELETE {{Fcg.Api_HostAddress}}/jogos/{{gameId}}
+Authorization: Bearer {{adminToken}}
+
+###
+
+POST {{Fcg.Api_HostAddress}}/usuarios/{{userId}}/biblioteca/{{gameId}}
+Authorization: Bearer {{adminToken}}
+
+###
+
+GET {{Fcg.Api_HostAddress}}/biblioteca
+Authorization: Bearer {{token}}
+Accept: application/json
+
+###
+
+GET {{Fcg.Api_HostAddress}}/usuarios
+Authorization: Bearer {{adminToken}}
+Accept: application/json
+
+###
+
+PATCH {{Fcg.Api_HostAddress}}/usuarios/{{userId}}/perfil
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "perfil": "Administrator"
+}
+
+###
+
+POST {{Fcg.Api_HostAddress}}/promocoes
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "jogoId": "{{gameId}}",
+  "nome": "Semana Tech",
+  "descricao": "Desconto especial para alunos.",
+  "percentualDesconto": 20,
+  "inicioEm": "2026-05-01T00:00:00Z",
+  "fimEm": "2026-05-10T23:59:59Z"
+}
+
+###
+
+GET {{Fcg.Api_HostAddress}}/promocoes
+Authorization: Bearer {{token}}
+Accept: application/json
+
+###

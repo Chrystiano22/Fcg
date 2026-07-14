@@ -1,0 +1,85 @@
+RELATORIO DE ENTREGA - TECH CHALLENGE FASE 1
+FIAP CLOUD GAMES (FCG)
+
+Data de referencia: 2026-05-05
+Branch de referencia: fase1-fcg-mvp
+
+1. NOME DO GRUPO
+
+CMB Angello
+
+2. PARTICIPANTES E USERNAMES NO DISCORD
+
+- Chrystiano Angello Goncalves Mendes - Discord: .chrystiano
+
+3. DESCRICAO RESUMIDA DA ENTREGA
+
+O projeto entregue nesta fase implementa o MVP da plataforma FIAP Cloud Games em .NET 8.
+
+Escopo coberto:
+
+- cadastro de usuarios
+- autenticacao com JWT
+- autorizacao com perfis User e Administrator
+- administracao de jogos
+- biblioteca de jogos adquiridos
+- promocoes administradas por perfil Administrator
+- persistencia com Entity Framework Core e SQLite
+- migrations
+- Swagger
+- logs estruturados
+- testes automatizados
+- documentacao DDD
+
+4. LINK DA DOCUMENTACAO
+
+Documentacao DDD visual equivalente:
+https://github.com/Chrystiano22/Fcg/blob/fase1-fcg-mvp/docs/ddd/DDD_FASE1_FCG.md
+
+README do projeto:
+https://github.com/Chrystiano22/Fcg/blob/fase1-fcg-mvp/README.md
+
+Observacao:
+Se o grupo publicar a documentacao em outra ferramenta, como Miro, substituir ou complementar os links acima.
+
+5. LINK DO(S) REPOSITORIO(S)
+
+Repositorio principal:
+https://github.com/Chrystiano22/Fcg
+
+Branch utilizada para a Fase 1:
+https://github.com/Chrystiano22/Fcg/tree/fase1-fcg-mvp
+
+6. LINK DO VIDEO
+
+[LINK DO VIDEO AINDA SERA INSERIDO APOS A PUBLICACAO]
+
+7. ARQUIVOS DE APOIO DA ENTREGA
+
+Checklist principal:
+C:\Users\Chrys\source\repos\Tech_Challenge\FASE1_CHECKLIST_EXECUCAO.md
+
+Documentacao de andamento:
+C:\Users\Chrys\source\repos\Tech_Challenge\DOCUMENTACAO_ANDAMENTO_FASE1.md
+
+Documentacao DDD:
+C:\Users\Chrys\source\repos\Tech_Challenge\docs\ddd\DDD_FASE1_FCG.md
+
+8. VALIDACAO FINAL ANTES DA SUBMISSAO
+
+Antes de enviar, revisar:
+
+- nome do grupo preenchido
+- participantes preenchidos
+- usernames do Discord preenchidos
+- link do video preenchido
+- links do repositorio e da documentacao acessiveis
+- video com no maximo 15 minutos
+- Swagger funcionando na demonstracao
+- README atualizado
+- documentacao DDD anexada ou publicada
+
+9. OBSERVACAO FINAL
+
+Este arquivo foi preparado como base final do relatorio de entrega exigido pela Fase 1.
+O unico campo em aberto neste momento e a URL final do video, que sera preenchida apos a publicacao.
