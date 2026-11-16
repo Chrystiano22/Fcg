@@ -1,5 +1,13 @@
 # FIAP Cloud Games - Tech Challenge Fase 1
 
+## Entrega da Fase 4
+
+A evolucao em microsservicos, busca Elasticsearch e pipelines de entrega esta no
+[repositorio de orquestracao](https://github.com/Chrystiano22/fcg-orchestration/tree/codex/fase4-progress).
+Consulte o [relatorio da Fase 4](https://github.com/Chrystiano22/fcg-orchestration/blob/codex/fase4-progress/RELATORIO_ENTREGA_FASE4.txt)
+para links de codigo, arquitetura, validacoes e alcance da implantacao.
+Este repositorio preserva o monolito original da Fase 1.
+
 ## Visao geral
 
 Este repositorio contem a implementacao da **Fase 1** do Tech Challenge da plataforma **FIAP Cloud Games (FCG)**.
